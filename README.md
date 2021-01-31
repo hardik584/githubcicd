@@ -1,5 +1,6 @@
-# githubcicd
 ![CI](https://github.com/hardik584/githubcicd/workflows/CI/badge.svg?branch=main)
+# githubcicd
+
 A new Flutter project.
 
 ## Getting Started
