@@ -4,6 +4,7 @@ void main() {
   runApp(MyApp());
 }
 
+/// MyApp
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -27,7 +28,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/// MyHomePage
 class MyHomePage extends StatefulWidget {
+  /// Constructer
   MyHomePage({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -39,6 +42,7 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
+  /// title
   final String title;
 
   @override
@@ -93,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'You have pushed the button this many times:',
             ),
             Text(
@@ -106,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
