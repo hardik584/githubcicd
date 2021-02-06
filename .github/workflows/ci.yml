@@ -15,7 +15,7 @@ jobs:
           java-version: "12.x"
       - uses: subosito/flutter-action@v1
         with:
-          channel: "stable"
+          channel: "dev"
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
@@ -31,7 +31,7 @@ jobs:
           java-version: "12.x"
       - uses: subosito/flutter-action@v1
         with:
-          channel: "stable"
+          channel: "dev"
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build ios --release --no-codesign
@@ -47,7 +47,7 @@ jobs:
           java-version: "12.x"
       - uses: subosito/flutter-action@v1
         with:
-          channel: "stable"
+          channel: "dev"
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build appbundle
