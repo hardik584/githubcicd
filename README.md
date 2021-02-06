@@ -1,4 +1,4 @@
-![CI](https://github.com/hardik584/githubcicd/workflows/CI/badge.svg?branch=main)
+![CI](https://github.com/hardik584/githubcicd/workflows/CI/badge.svg?branch=v1.0)
 # githubcicd
 
 A new Flutter project.
