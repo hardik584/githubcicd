@@ -10,20 +10,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demc  s ',
+      title: 'Hurrrrey CICD Successfull',
       theme: ThemeData(
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
+        // application has a erblue toolbar. Then, without quitting the app, try
         // changing the primarySwatch below to Colors.green and then invoke
         // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
+        // or simply save your changes to "hot reload" DE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
-      home:const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Hurrrrey CICD Successfull'),
     );
   }
 }
@@ -77,9 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+      body: SingleChildScrollView(
         child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
@@ -104,6 +102,13 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            SizedBox(
+              width: double.infinity,
+              height: 500,
+              child: Image.network(
+                'https://miro.medium.com/max/700/1*xG69SfKHsFYXx2qebwBpZA.jpeg',
+              ),
+            )
           ],
         ),
       ),
