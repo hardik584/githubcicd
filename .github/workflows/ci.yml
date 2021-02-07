@@ -72,10 +72,10 @@ jobs:
           channel: "dev"
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build appbundle
+      - run: flutter build apk
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: Andriod App
-          path: ${{ github.workspace }}/build/app/outputs/bundle/release/app-release.aab
+          path: ${{ github.workspace }}/build/app/outputs/apk/release/app-release.apk
    
