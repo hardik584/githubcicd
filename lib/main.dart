@@ -105,8 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
               width: double.infinity,
               height: 500,
-              child: Image.network(
-                'https://miro.medium.com/max/700/1*xG69SfKHsFYXx2qebwBpZA.jpeg',
+              child: Image.asset(
+                'assets/cheers.jpeg',
               ),
             )
           ],
