@@ -59,5 +59,4 @@ jobs:
         with:
           name: App
           path: ${{ github.workspace }}/build/app/outputs/bundle/release/app-release.aab
-          working-directory: ./android
    
