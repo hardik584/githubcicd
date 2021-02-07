@@ -38,7 +38,21 @@ jobs:
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build ios --release --no-codesign
-
+        
+  build_web:
+    name: Build Flutter (Web)
+    needs: [flutter_test]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: subosito/flutter-action@v1
+      with:
+        channel: beta
+    - run: flutter config --enable-web
+    - run: flutter pub get
+    - run: flutter test
+    - run: flutter build web
+      
   build_appbundle:
     name: Build Flutter (Android)
     needs: [flutter_test]
