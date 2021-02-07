@@ -38,7 +38,12 @@ jobs:
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build ios --release --no-codesign
-        
+      - name: Upload iOS APP
+        uses: actions/upload-artifact@v2
+        with:
+          name: iOS APP
+          path: ${{ github.workspace }}/Users/runner/work/githubcicd/githubcicd/build/ios/iphoneos/Runner.app     
+  
   build_web:
     name: Build Flutter (Web)
     needs: [flutter_test]
@@ -51,8 +56,8 @@ jobs:
     - run: flutter config --enable-web
     - run: flutter pub get
     - run: flutter test
-    - run: flutter build web
-      
+    - run: flutter build web    
+
   build_appbundle:
     name: Build Flutter (Android)
     needs: [flutter_test]
@@ -67,4 +72,10 @@ jobs:
           channel: "dev"
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build appbundle
+      - run: flutter build apk
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: Andriod App
+          path: ${{ github.workspace }}/build/app/outputs/apk/release/app-release.apk
+   
