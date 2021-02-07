@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: iOS APP
-          path: ${{ github.workspace }}/Users/runner/work/githubcicd/githubcicd/build/ios/iphoneos/Runner.app     
+          path: ${{ github.workspace }}/build/ios/iphoneos/Runner.app     
   
   build_web:
     name: Build Flutter (Web)
